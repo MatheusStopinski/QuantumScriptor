@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula-1-JS</title>
+    <style>
+
+        body {
+            background-color: rgba(35, 34, 60, 0.907);
+            font: normal 25pt Arial;
+            color: aliceblue;
+        }
+        h1 {
+            color: azure;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicio 5</h1>
+    <script>       
+        var n1 = 3500.7
+        document.write(`<strong>${n1.toFixed(2)}</strong></br>`)    
+        document.write(`<strong>${n1.toFixed(2).replace('.',',')}</strong></br>`)    
+        document.write(`<strong>${n1.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})}</strong></br>`)    
+    </script>
+</body>
+</html>
