@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula-3-JS</title>
+    <style>
+        body {
+            background-color: rgba(35, 34, 60, 0.907);
+            font: normal 18pt Arial;
+            color: aliceblue;
+        }
+
+        h1 {
+            text-align: center;
+            color: azure;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Somando valores</h1>
+
+
+    <script>
+
+
+    var tn1 = window.document.getElementById('txtn1')
+    var tn2 = window.document.querySelector('input#txtn2')
+    var r = window.document.getElementById('r')
+    var n1 = Number(tn1.value)
+    var n2 = Number(tn2.value)
+    var z = n1 + n2 
+    r.innerHTML = `Resultado é <strong>${z}</strong>`
+}
+
+    </script>
+
+</body>
+
+</html>
