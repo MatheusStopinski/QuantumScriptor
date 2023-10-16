@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula-2-JS</title>
+
+    <style>
+
+        body {
+            background-color: rgba(35, 34, 60, 0.907);
+            font: normal 18pt Arial;
+            color: aliceblue;
+        }
+
+        h1 {
+            color: azure;
+        }
+
+        #area {
+            font: normal 20pt sans-serif;
+            font-weight: 700;
+            background-color: rgba(37, 16, 128, 0.1);
+            text-shadow: -2px 2px 7px rgb(18, 24, 30);
+            height: 200px;
+            width: 200px;
+            line-height: 200px;
+            text-align: center;
+            border-radius: 3px;
+            box-shadow: 2px 2px 10px #ffffff90;
+            position: relative;
+        }
+
+        #hidden_image {
+            display: none;
+            position: absolute;
+            top: -225px;
+            left: -23.1px;
+            height: 250px;
+            width: 295px;
+            border-radius: 3px;
+            box-shadow: 2px 2px 10px #ffffff90;
+            transform: scale(0.8);
+            transition: left 10s;
+        }
+
+        #image_wrapper {
+            position: relative;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <h1>Eventos DOM ( Document Objecto Model )</h1>
+
+    <div id="area">Clique!</div>
+
+    <div id="image_wrapper">
+        <img id="hidden_image" src="../img/DOM1.png" alt="Dom dos 'Velozes e Furiosos'">
+    </div>
+
+    <script>
+
+        // .addEventListener('ruow', nhaum) VAI FICAR PRESTANDO ATENÇÃO EM UM DETERMINADO EVENTO!!!
+
+        var area = document.getElementById('area')
+        var imageWrapper = document.getElementById('image_wrapper')
+        var hiddenImage = document.getElementById('hidden_image')
+        
+        
+        area.addEventListener('click', clicar)
+        //nesse caso eu nem precisava do que estava escrito no html * onclick="Clicar()" 
+
+        function clicar() {
+            area.innerText = 'I am DOM';
+            hiddenImage.style.display = 'block';
+            hiddenImage.style.left = '200px';
+            area.style.background = 'chartreuse';
+            
+        }
+
+
+    </script>
+
+</body>
+
+</html>
