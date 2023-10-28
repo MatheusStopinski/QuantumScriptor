@@ -7,14 +7,7 @@ function carregar () {
     if (haours >= 0 && haours < 12) {
         img.src = '../img/morning.jpg'
         document.body.style.background = "#FFFFF5"
-        photo.style.marginTop = "-32px";
-        photo.style.width = "450px";
-        photo.style.height = "450px";
-        photo.style.borderRadius = "50%";
-        photo.style.transform = "scale(0.8)";
-        photo.style.position = "relative";
-        photo.style.border = "2px ridge white";
-    } else if (haours >= 12 && haours < 18) {
+        photo.style.marginTop = "-32px";q
         img.src = '../img/afternoon.jpg'
         photo.style.marginTop = "-32px";
         photo.style.width = "450px";
