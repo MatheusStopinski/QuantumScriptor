@@ -15,16 +15,20 @@ if (inicio.value.length == 0 || fim.value.length == 0 || passo.value.length == 0
     if ( p <= 0 ) {
     window.alert('Contagem inválida - CONSIDERANDO PASSO 1')
     p = 1
-    }
-    if (i < f) {
+
+    } if (i < f) {
+
         for (let c = i; c <= f; c += p) {
             contagem.innerHTML += ` ${c} \u{1F449}`      
         }  
+
     } else {
+
         for (let c = i; c>= f; c -= p) {
             contagem.innerHTML += ` ${c} \u{1F449}`      
         }
-        contagem.innerHTML += `\u{1F3C1}`    
-    }  
+    } 
+    contagem.innerHTML += `\u{1F3C1}`    
+ 
 }
 }
