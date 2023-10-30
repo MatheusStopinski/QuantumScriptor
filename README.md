@@ -4,3 +4,4 @@
 <img align="center" src="https://i.imgur.com/OiHfMIV.png" alt="Function somar">        
 <img align="center" src="https://i.imgur.com/hjQdd7o.png" alt="testing the 'if'">    
 <img align="center" src="https://i.imgur.com/cJpcfdT.png" alt="testing the 'if'">    
+<img align="center" src="https://i.imgur.com/vD8ttnX.png" alt="let's count">    
