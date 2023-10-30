@@ -12,10 +12,19 @@ if (inicio.value.length == 0 || fim.value.length == 0 || passo.value.length == 0
     let i = Number(inicio.value)
     let f = Number(fim.value)
     let p = Number(passo.value)
-    for (let c = i; c <= f; c += p ) {
-        contagem.innerHTML += ` ${c} \u{1F449}`  
+    if ( p <= 0 ) {
+    window.alert('Contagem inválida - CONSIDERANDO PASSO 1')
+    p = 1
     }
-    contagem.innerHTML += `\u{1F3C1}`
-    
+    if (i < f) {
+        for (let c = i; c <= f; c += p) {
+            contagem.innerHTML += ` ${c} \u{1F449}`      
+        }  
+    } else {
+        for (let c = i; c>= f; c -= p) {
+            contagem.innerHTML += ` ${c} \u{1F449}`      
+        }
+        contagem.innerHTML += `\u{1F3C1}`    
+    }  
 }
 }
