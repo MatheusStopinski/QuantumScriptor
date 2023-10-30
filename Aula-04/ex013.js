@@ -8,7 +8,7 @@ var contagem = window.document.querySelector('p.contagem')
 if (inicio.value.length == 0 || fim.value.length == 0 || passo.value.length == 0 ) { 
     alert('[ERRO] Faltam informações!')
 } else {
-    contagem.innerHTML = 'Contando...'
+    contagem.innerHTML = 'Contando... <br>'
     let i = Number(inicio.value)
     let f = Number(fim.value)
     let p = Number(passo.value)
