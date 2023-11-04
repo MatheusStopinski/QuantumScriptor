@@ -1,0 +1,80 @@
+body {
+  background-color: rgba(35, 34, 60, 0.907);
+  font: normal 18pt Arial;
+  color: aliceblue;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  background: linear-gradient(
+    104deg,
+    rgba(82, 126, 155, 0.7033248081841432) 14%,
+    rgba(55, 54, 78, 1) 82%);
+  border: 1px ridge #496884;
+  padding: 0px 20px;
+  color: rgb(244, 244, 255);
+  display: inline-block;
+  border-radius: 7px;
+  box-shadow: 0px 10px 20px -10px #0a0b0b;
+}
+
+#CONTAINER {
+  display: inline-block;
+  text-align: start;
+  border-radius: 10px;
+  background-color: rgb(244, 244, 255);
+  min-height: 450px;
+  height: auto;
+  width: 450px;
+  border: 1px ridge #496884;
+  box-shadow: 0px 10px 20px -10px #0a0b0b;
+}
+
+p {
+  margin: 20px 10px 20px 20px;
+  color: black;
+}
+
+label {
+  display: none;
+}
+
+.btn {
+  padding: 13px;
+  width: 125px;
+  margin: auto;
+  text-align: center;
+  display: block;
+  font-size: 25px;
+  border-radius: 5px;
+  border: 3px ridge #527e9b;
+  background: linear-gradient(
+    104deg,
+    rgba(82, 126, 155, 0.7033248081841432) 14%,
+    rgba(55, 54, 78, 1) 82%);
+  color: aliceblue;
+  font-weight: 600;
+  text-shadow: 10px 10px 30px black;
+  box-shadow: 0px 10px 20px -10px #0a0b0b;
+  cursor: pointer;
+  margin-bottom: 37px;
+  margin-top: 30px;
+}
+
+.btn:hover {
+  box-shadow: 0px 1px 2px -1px #0a0b0b;
+}
+
+#passo {
+  margin: -10px 0px 15px 17px;
+}
+
+#_nbsp {
+  margin: 15px 0px -45px 27px;
+}
+
+#nbsp {
+  margin: -40px 0px -45px 44px;
+}
