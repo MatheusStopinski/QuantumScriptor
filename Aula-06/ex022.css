@@ -20,34 +20,29 @@ h1 {
   box-shadow: 0px 10px 20px -10px #0a0b0b;
 }
 
-#CONTAINER {
-  display: inline-block;
-  text-align: start;
-  border-radius: 10px;
-  background-color: rgb(244, 244, 255);
-  min-height: 450px;
-  height: auto;
-  width: 450px;
-  border: 1px ridge #496884;
-  box-shadow: 0px 10px 20px -10px #0a0b0b;
+.pai {
+  text-align: center; /* Centralize os elementos internos */
 }
 
-p {
-  margin: 20px 10px 20px 20px;
+.input-container {
+  display: inline-block; 
+  text-align: start; 
+}
+
+.input-container p {
   color: black;
 }
 
-label {
-  display: none;
+#between {
+  margin: 0 10px 0 0; 
+  width: 290px;
+
 }
 
 .btn {
-  padding: 13px;
-  width: 125px;
-  margin: auto;
-  text-align: center;
-  display: block;
-  font-size: 25px;
+  display: inline-block; /* Elemento do botão em linha com o campo de entrada */
+  padding: 7px;
+  font-size: 16px;
   border-radius: 5px;
   border: 3px ridge #527e9b;
   background: linear-gradient(
@@ -59,22 +54,13 @@ label {
   text-shadow: 10px 10px 30px black;
   box-shadow: 0px 10px 20px -10px #0a0b0b;
   cursor: pointer;
-  margin-bottom: 37px;
-  margin-top: 30px;
+  position: relative;
+  bottom: 13px;
+  margin-left: 20px;
+  transition: box-shadow 0.4s;
 }
 
-.btn:hover {
-  box-shadow: 0px 1px 2px -1px #0a0b0b;
-}
 
-#passo {
-  margin: -10px 0px 15px 17px;
-}
-
-#_nbsp {
-  margin: 15px 0px -45px 27px;
-}
-
-#nbsp {
-  margin: -40px 0px -45px 44px;
+.btn.active {
+  box-shadow: none;
 }
