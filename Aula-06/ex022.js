@@ -62,7 +62,7 @@ function finish() {
     message3.textContent = `The lowest value reported was ${menor}`;
 
     let message4 = document.createElement('p');
-    message4.textContent = `Adding all the values ​​we have${soma}`;
+    message4.textContent = `Adding all the values we have ${soma}`;
 
     message1.style.position = 'absolute';
     message1.style.left = '75%'; 
