@@ -27,21 +27,25 @@ h1 {
 .input-container {
   display: inline-block; 
   text-align: start; 
+  margin-left: -133px;
 }
 
 .input-container p {
-  color: black;
+  color: rgb(255, 255, 255);  
 }
 
 #between {
-  margin: 0 10px 0 0; 
-  width: 290px;
-
+  display: flex;
+  margin: 0px 0px 0px -1px; 
+  top: 100px;
+  width: 295px;
+  border-radius: 2px;
+  
 }
 
-.btn {
+.btn, .btn2 {
   display: inline-block; /* Elemento do botão em linha com o campo de entrada */
-  padding: 7px;
+  padding: 17px;
   font-size: 16px;
   border-radius: 5px;
   border: 3px ridge #527e9b;
@@ -56,11 +60,36 @@ h1 {
   cursor: pointer;
   position: relative;
   bottom: 13px;
-  margin-left: 20px;
+  margin-left: 18px;
+  left: 65px;
   transition: box-shadow 0.4s;
 }
 
-
-.btn.active {
+.btn2, .btn.active {
   box-shadow: none;
+}
+
+.btn2 {
+  display: flex;
+  justify-content: start;
+  margin-left: 253px;
+  margin-top: 15px;
+  padding: 9px;
+  width: 300px;
+  left: 0px;
+  box-shadow: 0px 3px 25px -1px rgba(43, 15, 255, 0.515);  
+}
+
+#seld {
+  display: flex;
+  justify-content: start;
+  margin-left: 253px;
+  margin-top: 5px;
+  width: 299px;
+}
+
+.text {
+  background-color: #527e9b;
+  border-radius: 2px;
+  width: 300px;
 }

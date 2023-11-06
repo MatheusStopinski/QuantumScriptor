@@ -13,20 +13,25 @@
         <h1>Number <br> Analyzer and Validator</h1>
     </header>
 
-    <div class="pai">
+    <section class="pai">
+
         <div class="input-container">
             <label for="between"><div class="text">Number (between 1 to 100):</div></label>
             <input type="number" name="between" id="between">
             
         </div>
-        <button class="btn" onclick="add()">Adicionar</button>
+
+        <button class="btn" onclick="add()">Append</button>
+
         <div>
-            <select name="dados" id="seldados" size="10">   
+            <select name="dados" id="seld" size="7">   
                 <option>                  
                 </option>                
             </select>
+            <button class="btn2" onclick="finish()"><p id="alinhar">Click to finish</p></button>
         </div>
-    </div>  
+<div class="resul"></div>
+    </section>  
 
     <script src="ex022.js"></script>
     </body>
