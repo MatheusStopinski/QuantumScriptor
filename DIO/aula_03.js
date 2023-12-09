@@ -1,4 +1,4 @@
-const media = (5 + 3 + 7) / 3
+const media = (9 + 9 + 9) / 3
 console.log(media);
 
 if (media < 5) {  
