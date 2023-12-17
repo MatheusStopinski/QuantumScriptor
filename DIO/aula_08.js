@@ -24,3 +24,4 @@ if (pay === '1') {
   } else {
     console.log('incorrect payment');
   }
+
