@@ -2,11 +2,13 @@ class Ser {
   nome;
   raça;
   idade;
+  // anoDeNascimento;
 
   constructor(nome, raça, idade) {
     this.nome = nome;
     this.raça = raça;
     this.idade = idade;
+ // this.anoDeNascimento = 2023 - idade;
   }
 
   descrever() {
