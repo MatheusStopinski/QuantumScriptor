@@ -1,0 +1,22 @@
+* {
+    font-family: 'Roboto', 'sans-serif';
+    box-sizing: border-box;
+}
+
+body{    
+    background-color: rgb(6, 1, 17);
+}
+
+.content{
+    padding: 1rem;    
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+h1 {   
+    color: azure;
+    margin: 0px 0px 12px 0px;
+    font-size: 34px;
+}
+

@@ -1,0 +1,106 @@
+
+ol.pokemons{
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center; 
+    
+}
+
+ol.pokemons li {
+    margin: .4rem;
+    padding: .3rem .2rem .7rem;
+    background-color: #b1a30b;    
+    font-size: 17px;
+    align-items: center;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    height: 150px;
+    min-width: 140px;
+    width: 180px;
+    border: 1px solid rgb(251, 249, 255);
+    box-shadow: 0px -5px 12px 0px inset rgba(144, 4, 4, 0.986);
+
+}
+
+img{
+    margin-top: -29px;
+    border-style: none;
+    padding: none;
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: 0.9rem;
+    overflow: hidden;
+}
+
+.Charmeleon{
+    object-fit: cover;
+    object-position: center -10px;       
+}
+
+.Chariizard{
+    object-fit: cover;
+    object-position: center -120px;       
+}
+
+.nome{
+    z-index: 1;
+    position: relative;
+    top: 121px;
+    left: 22.5px;
+    color: blanchedalmond;
+    text-shadow: 1px 1px 10px rgba(4, 4, 4, 0.858);
+}
+
+.number, .numberb, .numberv, .numberc, .numbercc, .numberccc {    
+    position: relative;
+    display: inline-block; 
+    bottom: 110px;
+    left: -104px;
+    z-index: 1;
+    transform: rotate(-41deg);
+    transform-origin: left bottom;
+    font-size: 18px;
+    color: #b1a30b;
+    font-weight: 700;
+    text-decoration: underline;
+    text-shadow: 1px 1px 4px rgb(4, 4, 4);
+}
+
+.numberb, .numberv, .numberccc{
+    left: -110px;
+}
+.numberc {
+    left: -116px;
+}
+.numbercc{
+    left: -120px;
+}
+
+@media screen and (max-width: 204px){    
+    .content{
+        min-width: 200px;      
+    }
+
+    h1 {   
+        font-size: 30px;
+    }
+    
+    .number {
+        left: -93px;
+    }
+    .numberb, .numberv, .numberccc{
+        left: -100px;
+    }        
+    .numberc {
+        left: -106px;
+    }    
+    .numbercc{
+        left: -110px;
+    }
+}
