@@ -1,5 +1,5 @@
 const ser = {
-    genero: 'masculino'
+    genero: 'Masculino'
 }
 
 const Yokan = {
@@ -9,3 +9,14 @@ const Yokan = {
 }
 
 console.log(Yokan.genero);
+
+// ---------------------------- Ou assim: -----------------------------
+
+const ser = {
+    genero: 'Masculino'
+}
+
+const yokan = Object.create(ser)
+yokan.nome = 'Yokan';
+
+console.log(yokan.genero);
