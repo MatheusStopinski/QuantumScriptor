@@ -1,9 +1,32 @@
-const lista = [1, 2, 3]
+// new Promise((resolve, reject) => {                                  A PROMESSA
+    
+// })
 
-console.log(lista.join('/')); // Juntar
+// setTimeout(() => {                                       CONTAR TEMPO ANTES DE EXECUTAR!
+//     const numero = parseInt(Math.random() * 100)
+//     resolve (numero)
+// }, 1000)
 
-// --------------- OUTRO EXEMPLO -----------------
 
-const nomes = [{ nome: 'Katsute'}, { nome: 'Kyla'}, { nome: 'Balak'}]
+const promessaFeita = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        const numero = parseInt(Math.random() * 100)
+        resolve (numero)
+    }, 1000)
+})
 
-console.log(nomes.map((n) => n.nome).join(' - '));
+
+promessaFeita
+    .then((value) => {                        // DA PRA CRIAR VARIOS ==> .THEN
+        console.log(value);                   // AQUI ELE JA EXECUTA O VALOR
+        return value + 10                     // NOVA FORMULA QUE SERA SO MOSTRADO NO OUTRO
+    })
+    .then((value) => {
+        console.log(value);
+    })
+    .catch((error) => {
+    console.error(error);
+    })
+    .finally(() => {
+        console.log('Finalizou!');
+    })
