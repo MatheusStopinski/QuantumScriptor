@@ -1,2 +1,2 @@
 
-<img align="center" src="https://imgur.com/dd1NfSs" alt="playList">
+<img align="center" src="https://i.imgur.com/dd1NfSs.png?2" alt="playList">
