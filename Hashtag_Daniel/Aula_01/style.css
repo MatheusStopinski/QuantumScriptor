@@ -1,0 +1,80 @@
+body {
+  background-image: linear-gradient(#3b1566, #5f4da8);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #b19eba;
+}
+
+.container-aplicativo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  background-color: inherit;
+  color: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+.music-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#informacoes-faixa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0 1rem 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  
+}
+
+#nome-autor {
+  margin-top: 15px;
+  font-size: 2rem;
+  text-shadow: 0px 5px 20px #261a49;
+  color: #c1c1cf;
+}
+
+#capitulo {
+  margin-top: -10px;
+  margin-bottom: -2px;
+  text-shadow: 0px 5px 20px #261a49;
+  border-bottom: 7px double #582a8c;
+  color: #cfcfdb;
+  padding: 3px;
+  border-radius: 3px;
+  width: 120px;
+}
+
+#anterior, #proximo {
+  font-size: 3rem;
+  background: none;
+}
+
+#play-pause {
+  font-size: 4rem;
+  background: none;
+}
+
+#container-botoes {
+  color: #ffffff8f;  
+  filter:  brightness(110%) drop-shadow(0px 0px 5px #6900f3a8);
+  box-shadow: -2px -2px 3px inset #ffffffd6;
+  border-radius:30px;
+  transform: scale(0.9);
+  background-image: linear-gradient(#3b1566, #5f4da8);
+  padding: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
