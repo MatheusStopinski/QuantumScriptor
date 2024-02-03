@@ -11,6 +11,8 @@
   font-family: 'San Francisco';
   list-style-type: none;
 }
+
+/* :root == Representa o elemento raiz do documento HTML, geralmente o elemento '<html>'. */
 :root {
   display: flex;
   flex-direction: column;
@@ -24,6 +26,7 @@ body {
 nav {
   width: 61.25rem;
   & > ul {
+    /* & se refere ao seletor nav. Portanto, & > ul significa "ul que é um filho direto de nav". */
     display: flex;
     width: 100%;
     justify-content: space-between;
