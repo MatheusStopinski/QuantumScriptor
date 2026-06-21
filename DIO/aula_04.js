@@ -1,8 +1,8 @@
 // Calculate your IMC
 
-const peso = 85;
+const peso = 80;
 const altura = 1.85;
-const imc = peso / Math.pow(altura, 2);
+const imc = peso / (altura ** 2);
 
 console.log(imc);
 
