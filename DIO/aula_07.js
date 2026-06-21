@@ -20,9 +20,9 @@ function escrevaNome(nome){
 
 function vereficarIdade(idade) {
     if (idade < 18) {
-        console.log(escrevaNome('Matheus ') + 'logo menor de idade');
+        console.log(escrevaNome('Matheus ') + 'e é menor de idade');
     } else {
-        console.log(escrevaNome('Matheus ') + 'logo maior de idade');
+        console.log(escrevaNome('Matheus ') + 'e é maior de idade');
     }
 }
  vereficarIdade(18)
