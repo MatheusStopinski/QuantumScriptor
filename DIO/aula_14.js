@@ -1,5 +1,3 @@
-// Exercicios
-
 class Pessoa {
   nome;
   peso;

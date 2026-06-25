@@ -1,44 +1,33 @@
-const price = 100
-const pay = '4'
+const grana = 10000
+const escolha = '7'
 
 const pagamentos = {
   '1': { nome: 'Débito', desconto: 10 },
   '2': { nome: 'Pix / Espécie', desconto: 15 },
-  '3': { nome: 'Parcelado até 2x', juros: 0 },
-  '4': { nome: 'Parcelado acima de 2x', juros: 10 }
+  '3': { nome: 'Parcelado até 2x' },
+  '4': { nome: 'Parcelado até 3x' },
+  '5': { nome: 'Parcelado até 4x' },
+  '6': { nome: 'Parcelado até 5x' },
+  '7': { nome: 'Parcelado até 6x' },
+  '8': { nome: 'Parcelado até 7x' },
+  '9': { nome: 'Parcelado 8x ou mais', juros: 10 }
 }
 
-function aplicarDesconto(valor, desconto) {
-  return valor - (valor * (desconto / 100))
-}
+const aplicarDesconto = (valor, desconto) => valor - (valor * (desconto / 100))
+const aplicarJuros = (valor, juros) => valor + (valor * (juros / 100))
+const formatarMoeda = (valor) => valor.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
 
-function aplicarJuros(valor, juros) {
-  return valor + (valor * (juros / 100))
-}
-
-function calcularTotal(valor, metodo) {
+const calcularTotal = (valor, metodo) => {
   const regra = pagamentos[metodo]
-
   if (!regra) return { total: null, forma: 'Forma de pagamento inválida' }
 
-  let total
-  if (regra.desconto !== undefined) {
-    total = aplicarDesconto(valor, regra.desconto)
-  } else {
-    total = aplicarJuros(valor, regra.juros || 0)
-  }
+  const { nome, desconto, juros } = regra
 
-  return { total, forma: regra.nome }
+  if (desconto) return { total: aplicarDesconto(valor, desconto), say: nome }
+  if (juros) return { total: aplicarJuros(valor, juros), say: nome }
+  return { total: valor, say: nome }
 }
 
-function formatarMoeda(valor) {
-  return valor.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
-}
+const { total, say } = calcularTotal(grana, escolha)
 
-const resultado = calcularTotal(price, pay)
-
-if (resultado.total === null) {
-  console.log(resultado.forma)
-} else {
-  console.log(`${resultado.forma}: ${formatarMoeda(resultado.total)}`)
-}
+console.log(total === null ? say : `${say}: ${formatarMoeda(total)}`)
