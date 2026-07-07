@@ -12,3 +12,7 @@ for (let i = 0; i < quantidade; i++) {
 
 print(maiorValorEncontrado);
 
+// entendi a logica, mas quero aprender mais sobre require e module.exports,
+//  como funciona, e como posso usar em outros arquivos.Claro!
+// Vamos falar sobre `require` e `module.exports` no Node.js.
+// saber também o principio de gets, e print, e como eles funcionam no contexto do código que você forneceu.

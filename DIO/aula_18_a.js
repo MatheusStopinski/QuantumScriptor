@@ -1,4 +1,4 @@
-//  EXPORTAR
+//  EXPORTAR ( module.exports ) PARA OUTRO ARQUIVO ( aula_18_a.js ) -----------------------------
 
 const entradas = [3, 100, 9, 99, 25, 8, 11, 55, 62, 12, 7]
 let i = 0;
