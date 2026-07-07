@@ -40,4 +40,5 @@ for (let i = 0; i < notas.length; i++) {
 }
 
 const media = soma / notas.length;
-console.log(media);
+
+console.log('Fim do programa o valor total é: ' + soma + ' e a média é: ' + media );   
