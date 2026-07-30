@@ -26,7 +26,7 @@ class Pessoa {
 const lista = [new Pessoa('Balak'), new Pessoa('Kyla'), new Pessoa('Mitsugui'), new Pessoa('Katsute')]
 
 
-const listaNomes = lista.map((element) => element.name)
+const listaNomes = lista.map((x) => x.name)
 
 
 console.log(listaNomes);

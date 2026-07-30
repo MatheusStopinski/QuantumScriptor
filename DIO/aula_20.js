@@ -1,14 +1,15 @@
 const ser = {
-    genero: 'Masculino'
+    genero: 'Masculino',
+    sabedoria: 'FODA 10/10',
 }
 
-const Yokan = {
-    nome: 'Yokan',
-    idade: 15,
+const quem = {
+    nome: 'Matheus Stopinski',
+    idade: 35,
     __proto__: ser // Aqui herdara um prototipo até achar um valor correspondente. (como se herdar uma herança!)
 }
 
-console.log(Yokan.nome, Yokan.idade, Yokan.genero);
+console.log(quem.nome, quem.genero, quem.idade, quem.sabedoria);
 
 /*
  Object → Objeto global do JS
